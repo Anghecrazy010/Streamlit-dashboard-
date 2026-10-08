@@ -21,7 +21,7 @@ REQUIRE_LOGIN = "auth0" in st.secrets
 def run_auth0():
     cfg = st.secrets["auth0"]
     domain, client_id = cfg["domain"], cfg["client_id"]
-    redirect_uri = cfg.get("redirect_uri", "https://jvsgkwerkx2ezoutzryudr.streamlit.app")
+    redirect_uri = cfg.get("redirect_uri", "https://gkddhgkcjkc6jvgqj7fmzy.streamlit.app")
 
     def login_url():
         return f"https://{domain}/authorize?" + urlencode({
